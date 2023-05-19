@@ -1,0 +1,19 @@
+.equipo{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.equipo h3{
+    font-weight: 400;
+    color: #212121;
+    border-bottom: 3px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+.colaboradores{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

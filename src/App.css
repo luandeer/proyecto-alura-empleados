@@ -1,0 +1,22 @@
+:root {
+    --container-width-lg: 80%;
+    --container-width-md: 100%;
+    --container-width-sm: 100%;
+}
+/*contenedor <div id="root"></div<*/
+#root {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1024px) {
+    #root {
+        width: var(--container-width-md);
+    }
+}
+
+@media screen and (max-width:600px) {
+    #root {
+        width: var(--container-width-sm);
+    }
+}

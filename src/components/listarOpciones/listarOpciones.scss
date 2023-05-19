@@ -1,0 +1,23 @@
+
+.campo-equipo{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+
+.campo-equipo label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.6rem 0;
+}
+
+.campo-equipo select{
+    width: 100%;
+    padding: 1.2rem 1rem;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    //es para cuando le das click al input el border cambiar de color
+    outline-color: #6278F7;
+    cursor: pointer;
+}

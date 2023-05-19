@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Prata&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  /* Para utilizar rem */
+  font-size: 90%;
+  /*mejora al dirigirse de un section a otro section*/
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Prata', 'Montserrat', serif;
+  background-color: white;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+button{
+  color: #FFFFFF;
+  background: #6278F7;
+  padding: 1.3rem 2rem;
+  border-radius: 0.5rem;
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
