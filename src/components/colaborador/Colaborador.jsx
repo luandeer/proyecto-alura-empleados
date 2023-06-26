@@ -1,5 +1,7 @@
 import React from 'react'
 import './colaborador.scss'
+import {IoCloseCircle} from "react-icons/io5"
+
 const Colaborador = (props) => {
 
   //destructuracion
@@ -8,6 +10,7 @@ const Colaborador = (props) => {
 
   return (
     <div className="colaborador">
+      <IoCloseCircle className='eliminar' onClick={eliminarColaborador}/>
       <div className="encabezado" style={{backgroundColor: colorPrimario}}>
         <img src={foto} alt={nombre} />
       </div>

@@ -3,6 +3,14 @@
     padding: 2rem;
     text-align: center;
     font-size: 1.3rem;
+    position: relative;
+}
+
+.input-color{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    background-color: transparent;
 }
 
 .equipo h3{

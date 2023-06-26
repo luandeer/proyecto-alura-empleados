@@ -16,6 +16,35 @@ function App() {
     puesto: "front"
   }]);
 
+  const [equipos, setEquipos] = useState([
+   
+      {
+        titulo: "Programación",
+        colorPrimario: "#57C278",
+        colorSecundario: "#D9F7E9",
+      },
+      {
+        titulo: "Front End",
+        colorPrimario: "#82CFFA",
+        colorSecundario: "#E8F8FF",
+      },
+      {
+        titulo: "Data Science",
+        colorPrimario: "#A6D157",
+        colorSecundario: "#F0F8E2",
+      },
+      {
+        titulo: "Devops",
+        colorPrimario: "#E06B69",
+        colorSecundario: "#FDE7E8",
+      },
+      {
+        titulo: "UX y Diseño",
+        colorPrimario: "#DB6EBF",
+        colorSecundario: "#FAE9F5",
+      }
+  ])
+
   const cambiarMostrar = () => {
     setMostrarForm(!mostrarForm);
   };
@@ -31,9 +60,21 @@ const eliminarColaborador = () =>{
 
 }
 
+//Actualizar color de equipo
+const actualizarColor = (color, titulo) =>{
+  const equipoActualizado = equipos.map((equipo)=>{
+    if(equipo.titulo === titulo){
+      equipo.colorPrimario =color
+    }
+    return equipo
+  })
+
+  setEquipos(equipoActualizado)
+}
 
   //Lista de equipos
-  const equipos = [
+  /**
+   const equipos = [
     {
       titulo: "Programación",
       colorPrimario: "#57C278",
@@ -60,6 +101,7 @@ const eliminarColaborador = () =>{
       colorSecundario: "#FAE9F5",
     },
   ];
+   */
 
   return (
     <>
@@ -80,8 +122,10 @@ const eliminarColaborador = () =>{
         return <Equipo
           datos={equipo}
           key={equipo.titulo} 
+          //esto es para que cuando se agregue a un colaborador se muestre en el campo elegido
           colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
           eliminar ={eliminarColaborador}
+          actualizarColor={actualizarColor}
           />;
       })}
 
